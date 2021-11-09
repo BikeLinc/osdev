@@ -12,8 +12,8 @@
 ; run with "qemu-system-x86_64 -fda os.image"
 
 
-[org 0x1000]
-KERNEL_OFFSET equ 0x0    ; Memory offset where we load our kernel
+[org 0x7c00]
+KERNEL_OFFSET equ 0x1000    ; Memory offset where we load our kernel
 
     mov [BOOT_DRIVE], dl    ; Store boot drive in DL 
     

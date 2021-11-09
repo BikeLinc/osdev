@@ -1,4 +1,4 @@
-void main() {
+void _start() {
     // Create pointer of character and point to first cell of video memory;
     char* video_memory = (char*) 0xb8000;
 
