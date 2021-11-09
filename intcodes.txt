@@ -1,0 +1,51 @@
+---- Interrupt Codes ----
+
+0x10 -- Screen-related ISR
+0x13 -- Disc-related ISR
+
+
+---- Registers ----
+
+ax -- Accumulator
+bx -- Base
+cx -- Counter
+dx -- Data
+
+cs -- Code Segment
+ds -- Data Segment
+ss -- Stack Segment
+es -- Extra Segment
+
+
+---- Hex Cheat Sheet ----
+
+0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15
+0   1   2   3   4   5   6   7   8   9   a   b   c   d   e   f
+
+
+128 64  32  16  8   4   2   1
+x   x   x   x   x   x   x   x
+
+10000000 = 128
+01000000 = 64
+00100000 = 32
+00010000 = 16
+00001000 = 8
+00000100 = 4
+00000010 = 2
+00000001 = 1
+
+
+---- Stack Pointers ----
+Base Pointer    -   bp
+Stack Pointer   -   sp
+
+
+---- Jump Conditions ----
+
+je  target      ; jump if equal ( i.e. x == y)
+jne target      ; jump if not equal ( i.e. x != y)
+jl  target      ; jump if less than ( i.e. x < y)
+jle target      ; jump if less than or equal ( i.e. x <= y)
+jg  target      ; jump if greater than ( i.e. x > y)
+jge target      ; jump if greater than or equal ( i.e. x >= y)
